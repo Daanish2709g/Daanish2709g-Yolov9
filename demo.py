@@ -3,7 +3,7 @@ import time
 import cv2
 import numpy as np
 from model.yolo_model import YOLO
-
+  
 def process_image(img):
     """Resize, normalize, and expand image dimensions for YOLO model input."""
     image = cv2.resize(img, (416, 416), interpolation=cv2.INTER_CUBIC)
